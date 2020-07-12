@@ -1,0 +1,40 @@
+<div class="container">
+  <h1 id="heading">DATA ADJUSTMENT TOOL</h1>
+  <form action="">
+    <label id="label" for="change-input">CSV update</label>
+    <input id ="change-input" type="file" id="change-input" (change)="FileSelect($event)">
+    <br>
+    <button id="update" type="button" (click)="onClick()">
+      Update
+    </button>
+    <button id="add" type="button" (click)="onAdd()">
+      Add
+    </button>
+    <button id="download" type="button" (click)="Download()">
+      Show Updates
+    </button>
+    <button id="Reset" type="reset" (click)="Reset()">
+      Reset
+    </button>
+  </form>
+  <table *ngIf="jsondata && ids.length!=0">
+    <caption>The Updated Records</caption>
+    <thead>
+      <tr>
+        <th>Student-ID</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+      </tr>
+      
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of ids;let i=index">
+        <td>{{jsondata[record].stud_id}}</td>
+        <td>{{jsondata[record].first_name}}</td>
+        <td>{{jsondata[record].middle_name}}</td>
+        <td>{{jsondata[record].last_name}}</td>
+      </tr>
+    </tbody>
+  </table>  
+</div>

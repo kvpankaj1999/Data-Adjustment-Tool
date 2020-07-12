@@ -1,0 +1,86 @@
+.container{
+  background-color: #FFFFFF;
+  width: 400px;
+  height: 400px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+h1 {
+  color: #ff3b3f;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 10% 0 10%;
+  font-size: x-large;
+  padding: 20% 0 0 0;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+  letter-spacing:1px; 
+}
+label {
+height:50%;
+width:50%;
+text-align: left;
+padding : 10% 5% 10% 10%;
+color : #d1001f;
+font-weight: bolder;
+}
+#change-input{
+  cursor: pointer;
+}
+button {
+  width: 45%;
+  margin: 1em 1.5% 0;
+  background-color: #d11f00;
+  padding: 1em 0;
+  font-size: 1.4em;
+  text-align: center;
+  color: #262626;
+  border-radius :5px;
+  transition-duration: 0.35s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff00ff;
+  color: #007700;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #38678f;
+  margin: 5em auto;
+}
+caption{
+  color: #1f3bff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+  letter-spacing:1px; 
+}
+th {
+  background: steelblue;
+  height: 54px;
+  width: 25%;
+  font-weight: normal;
+  text-shadow: 0 1px 0 #38678f;
+  color: white;
+  border: 1px solid #38678f;
+  box-shadow: inset 0px 1px 2px #568ebd;
+  transition: all 0.2s;
+}
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+tr:last-child {
+  border-bottom: 0px;
+}
+td {
+  border-right: 1px solid #cccccc;
+  padding: 10px;
+  transition: all 0.2s;
+}
+td:last-child {
+  border-right: 0px;
+}
